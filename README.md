@@ -1,1 +1,1 @@
-# goit-markup-hw-06
+# [GitHub Page](https://oleksbod.github.io/goit-markup-hw-05/)
