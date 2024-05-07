@@ -627,6 +627,26 @@ li {
   justify-content: center;
 }
 
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  min-width: 300px;
+  max-width: 392px;
+  width: calc(100% - 4px);
+  padding: 72px 4px 24px 4px;  
+  min-height: 584px;
+  border-radius: 4px;
+  background: var(--dairy-color);
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.20);
+}
+@media only screen and (min-width: 400px) {
+  .modal {   
+    width: 392px;
+    padding: 72px 16px 24px 16px;    
+  }
+}
 @media only screen and (min-width: 768px) {
   .header-navigation {
     justify-content: flex-start;
@@ -751,6 +771,12 @@ li {
   .image-wrapper {
     max-width: 356px;
     max-height: 300px;
+  }
+
+  .modal {
+    width: 408px;
+    max-width: 408px;
+    padding: 72px 24px 24px;
   }
 
   @media (min-resolution: 192dpi) {
@@ -934,20 +960,6 @@ li {
   pointer-events: initial;
   transition: var(--trns-slow);
   transition-property: opacity, visibility;
-}
-
-.modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translateX(-50%) translateY(-50%);
-  width: 408px;
-  padding: 24px;
-  padding-top: 72px;
-  min-height: 584px;
-  border-radius: 4px;
-  background: var(--dairy-color);
-  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.20);
 }
 
 .modal-btn {
