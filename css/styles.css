@@ -723,10 +723,6 @@ li {
     text-align: left;
   }
 
-  .socials {
-    justify-content: flex-start;
-  }
-
   .footer-form-subscription-label {
     max-width: 264px;
     flex-basis: 100%;
@@ -1158,8 +1154,8 @@ input[type="checkbox"]:checked+.modal-form-agreement-checkbox>.modal-form-agreem
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 100vh;
+  bottom: 0;
+  right: 0;
   padding: 80px 35px 40px 40px;
   background-color: var(--white-color);
   z-index: 999;
