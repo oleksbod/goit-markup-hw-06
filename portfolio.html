@@ -19,13 +19,19 @@
 </head>
 
 <body>
-    <header>
+    <header class="header">
         <div class="container flex space-between">
-            <nav class="flex">
+            <nav class="flex header-navigation">
                 <a class="logo raleway-font iris nav-link" href="./index.html">WEB<span
                         class="navy-blue">STUDIO</span></a>
 
-                <ul class="medium navy-blue flex">
+                <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                    <svg class="menu-toggle-icon" width="32" height="22">
+                        <use href="./images/icons.svg#icon-burger-menu"></use>
+                    </svg>
+                </button>
+
+                <ul class="header-nav-list medium navy-blue">
                     <li><a class="nav-link navy-blue" href="./index.html">Studio</a></li>
                     <li><a class="nav-link navy-blue current" href="./portfolio.html">Portfolio</a></li>
                     <li><a class="nav-link navy-blue" href="">Contacts</a></li>
@@ -33,7 +39,7 @@
             </nav>
 
             <address class="address">
-                <ul class="flex">
+                <ul class="address-nav-list">
                     <li><a class="nav-link slate" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
                     <li><a class="nav-link slate" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
                 </ul>
@@ -68,8 +74,8 @@
                     <li class="card-item list-item">
                         <a class="card-link" href="">
                             <div class="image-wrapper">
-                                <img src="./images/portfolio/banking_img.jpg" alt="banking app interface concept image"
-                                    width="360">
+                                <img src="./images/portfolio/img_banking.jpg" srcset="./images/portfolio/img_banking.jpg 1x, ./images/portfolio/img_banking@2x.jpg 2x"
+                                    alt="banking app interface concept image">
                                 <div class="overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App
                                     · Calorie Tracker App ·
                                     Exotic Fruit Ecommerce App · Cloud Storage App</div>
@@ -83,7 +89,8 @@
                     <li class="card-item list-item">
                         <a class="card-link" href="">
                             <div class="image-wrapper">
-                                <img src="./images/portfolio/cashless_img.jpg" alt="cashless payment image" width="360">
+                                <img src="./images/portfolio/img_cashless.jpg" srcset="./images/portfolio/img_cashless.jpg 1x, ./images/portfolio/img_cashless@2x.jpg 2x"
+                                    alt="cashless payment image">
                                 <div class="overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App
                                     · Calorie Tracker App ·
                                     Exotic Fruit Ecommerce App · Cloud Storage App</div>
@@ -97,7 +104,8 @@
                     <li class="card-item list-item">
                         <a class="card-link" href="">
                             <div class="image-wrapper">
-                                <img src="./images/portfolio/meditation_img.jpg" alt="meditation image" width="360">
+                                <img src="./images/portfolio/img_meditation.jpg" srcset="./images/portfolio/img_meditation.jpg 1x, ./images/portfolio/img_meditation@2x.jpg 2x"
+                                    alt="meditation image">
                                 <div class="overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App
                                     · Calorie Tracker App ·
                                     Exotic Fruit Ecommerce App · Cloud Storage App</div>
@@ -111,7 +119,8 @@
                     <li class="card-item list-item">
                         <a class="card-link" href="">
                             <div class="image-wrapper">
-                                <img src="./images/portfolio/taxi_img.jpg" alt="taxi service image" width="360">
+                                <img src="./images/portfolio/img_taxi.jpg" srcset="./images/portfolio/img_taxi.jpg 1x, ./images/portfolio/img_taxi@2x.jpg 2x"
+                                    alt="taxi service image">
                                 <div class="overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App
                                     · Calorie Tracker App ·
                                     Exotic Fruit Ecommerce App · Cloud Storage App</div>
@@ -125,8 +134,8 @@
                     <li class="card-item list-item">
                         <a class="card-link" href="">
                             <div class="image-wrapper">
-                                <img src="./images/portfolio/screen_img.jpg" alt="screen illustrations image"
-                                    width="360">
+                                <img src="./images/portfolio/img_screen.jpg" srcset="./images/portfolio/img_screen.jpg 1x, ./images/portfolio/img_screen@2x.jpg 2x"
+                                    alt="screen illustrations image" width="360">
                                 <div class="overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App
                                     · Calorie Tracker App ·
                                     Exotic Fruit Ecommerce App · Cloud Storage App</div>
@@ -140,7 +149,8 @@
                     <li class="card-item list-item">
                         <a class="card-link" href="">
                             <div class="image-wrapper">
-                                <img src="./images/portfolio/online_img.jpg" alt="online courses image" width="360">
+                                <img src="./images/portfolio/img_online.jpg" srcset="./images/portfolio/img_online.jpg 1x, ./images/portfolio/img_online@2x.jpg 2x"
+                                    alt="online courses image">
                                 <div class="overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App
                                     · Calorie Tracker App ·
                                     Exotic Fruit Ecommerce App · Cloud Storage App</div>
@@ -154,8 +164,8 @@
                     <li class="card-item list-item">
                         <a class="card-link" href="">
                             <div class="image-wrapper">
-                                <img src="./images/portfolio/instagram_img.jpg" alt="instagram stories concept image"
-                                    width="360">
+                                <img src="./images/portfolio/img_instagram.jpg" srcset="./images/portfolio/img_instagram.jpg 1x, ./images/portfolio/img_instagram@2x.jpg 2x"
+                                    alt="instagram stories concept image">
                                 <div class="overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App
                                     · Calorie Tracker App ·
                                     Exotic Fruit Ecommerce App · Cloud Storage App</div>
@@ -169,7 +179,8 @@
                     <li class="card-item list-item">
                         <a class="card-link" href="">
                             <div class="image-wrapper">
-                                <img src="./images/portfolio/organic_img.jpg" alt="organic food image" width="360">
+                                <img src="./images/portfolio/img_organic.jpg" srcset="./images/portfolio/img_organic.jpg 1x, ./images/portfolio/img_organic@2x.jpg 2x"
+                                    alt="organic food image">
                                 <div class="overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App
                                     · Calorie Tracker App ·
                                     Exotic Fruit Ecommerce App · Cloud Storage App</div>
@@ -183,7 +194,8 @@
                     <li class="card-item list-item">
                         <a class="card-link" href="">
                             <div class="image-wrapper">
-                                <img src="./images/portfolio/fresh_img.jpg" alt="fresh coffee image" width="360">
+                                <img src="./images/portfolio/img_fresh.jpg" srcset="./images/portfolio/img_fresh.jpg 1x, ./images/portfolio/img_fresh@2x.jpg 2x"
+                                    alt="fresh coffee image">
                                 <div class="overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App
                                     · Calorie Tracker App ·
                                     Exotic Fruit Ecommerce App · Cloud Storage App</div>
@@ -200,7 +212,7 @@
     </main>
 
     <footer class="footer navy-blue-bg white">
-        <div class="container flex">
+        <div class="container footer-container">
             <div class="studio-container">
                 <a class="logo raleway-font iris" href="./index.html">WEB<span class="cloud">STUDIO</span></a>
                 <p>Increase the flow of customers and sales for your business with digital marketing &amp; growth
@@ -248,7 +260,7 @@
             </div>
             <div class="footer-form-container">
                 <div class="footer-form-title">Subscribe</div>
-                <form class="footer-form-subscription">
+                <form class="footer-form-subscription" name="subscription_form">
                     <label class="footer-form-subscription-label">
                         <input class="footer-form-subscription-field" type="email" name="subscription_email" placeholder="E-mail">
                     </label>
@@ -262,6 +274,67 @@
             </div>
         </div>
     </footer>
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-toggle js-close-menu">
+            <svg class="modal-btn-icon" width="8" height="8">
+                <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+        </button>
+    
+        <ul class="mobile-menu">
+            <li><a class="link" href="./index.html">Studio</a></li>
+            <li><a class="link active" href="./portfolio.html">Portfolio</a></li>
+            <li><a class="link" href="">Contacts</a></li>
+        </ul>
+        <address class="mobile-address">
+            <ul>
+                <li><a class="link iris accent" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+                <li><a class="link slate" href="mailto:info@devstudio.com">info@devstudio.com</a></li>                
+            </ul>
+        </address>
+        <ul class="mobile-socials flex">
+            <li class="social-item">
+                <a class="social-link" href="https://www.instagram.com/" target="_blank"
+                    aria-label="Link to Instagram">
+                    <svg class="mobile-social-icon" width="24" height="24">
+                        <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg>
+                </a>
+            </li>
+
+            <li class="social-item">
+                <a class="social-link" href="https://twitter.com/" target="_blank" aria-label="Link to Twitter">
+                    <svg class="mobile-social-icon" width="24" height="24">
+                        <use href="./images/icons.svg#icon-twitter"></use>
+                    </svg>
+                </a>
+            </li>
+
+            <li class="social-item">
+                <a class="social-link" href="https://www.facebook.com/" target="_blank"
+                    aria-label="Link to Facebook">
+                    <svg class="mobile-social-icon" width="24" height="24">
+                        <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg>
+                </a>
+            </li>
+
+            <li class="social-item">
+                <a class="social-link" href="https://www.linkedin.com/" target="_blank"
+                    aria-label="Link to Linkedin">
+                    <svg class="mobile-social-icon" width="24" height="24">
+                        <use href="./images/icons.svg#icon-linkedin"></use>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
+    <script defer src="js/mobile-menu.js"></script>
 </body>
 
 </html>
